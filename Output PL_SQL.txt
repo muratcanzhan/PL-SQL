@@ -1,0 +1,8 @@
+SET SERVEROUTPUT ON
+DECLARE
+    v_sehir VARCHAR2(30) := 'İstanbul';
+BEGIN
+    dbms_output.put_lıne(v_sehir);
+    v_sehir := 'Niğde';
+    dbms_output.put_lıne(v_sehir);
+END;
