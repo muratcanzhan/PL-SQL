@@ -1,0 +1,7 @@
+SET SERVEROUTPUT ON
+DECLARE
+v_sure1 interval year to month := '03-02';
+begın
+dbms_output.put_line(to_char(sysdate, 'dd.mm.Yyyy hh24:mi:ss'));
+dbms_output.put_line(sysdate + v_sure1);
+end;

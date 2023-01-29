@@ -1,0 +1,9 @@
+SET SERVEROUTPUT ON
+DECLARE
+    v_min_maas NUMBER;
+    v_max_maas NUMBER;
+BEGIN
+    select max(maas), mın(maas) into v_max_maas, v_min_maas
+    from personel;  
+    dbms_output.put_lıne(' Min maas: ' || v_min_maas || ' Max maas: ' || v_max_maas);
+END;

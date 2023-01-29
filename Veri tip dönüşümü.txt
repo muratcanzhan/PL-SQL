@@ -1,0 +1,9 @@
+SET SERVEROUTPUT ON
+DECLARE
+v_maas varchar2(10) := '1000';
+v_prim NUMBER := 2000;
+v_toplam NUMBER;
+begın
+v_toplam := v_prim + to_number(v_maas);
+dbms_output.put_line(v_toplam);
+end;
